@@ -448,7 +448,7 @@ var resizePizzas = function(size) {
   //   return dx;
   // }
 
-
+  // Chapter 5, Lesson 8, Section 10
   function changePizzaSizes(size) {
     // gatherning all the selector in one varible
     var randomPizzaContainer = document.querySelectorAll(".randomPizzaContainer");
