@@ -16,6 +16,10 @@ I will explain what I did in steps for how I got 90+ score.
 
 Until now I was using [python http server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) or [Fenix](http://fenixwebserver.com/) to run a local server, and test the page using a link by [ngrok](https://ngrok.com/) in PageSpeed Insights. After all the steps above I was getting 92 score on desktop and 70-80 on mobile, and PageSpeed Insights recomanded that I reduce the server response time, after a long search I uploaded the page to a server that already has files compression on it, and I got amazing results.
 
+#### After Review 1 I did:
+
+* Replace google fonts link with [WebFontLoader](https://github.com/typekit/webfontloader).
+
 [**Check a live version here**](http://mrosamah.com/perfmatters/).
 
 ![mobile-test](https://mrosamah.github.io/frontend-nanodegree-mobile-portfolio/score-mobile.jpg)
@@ -70,3 +74,11 @@ The second one was almost the same, but the function `changePizzaSizes(size)` wa
     }
   }
 ```
+
+#### After Review 1 I did:
+
+* Change all the `querySelector` to `getElementById` or `getElementsByClassName`.
+* Change some of the variables in the loops so we don't need to access an array every time.
+* Store some of the DOM calls in variable.
+* Declare some varibles in the initialisation of the loops.
+* Dynamiclly caculate number of pizzas needed to fill the screen in line 560.
